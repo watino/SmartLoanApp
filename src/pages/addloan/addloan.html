@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Addloan</ion-title>
+    <ion-title>เพิ่มการกู้ยืม</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,25 +15,37 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-card>
+    <!--<ion-card>
       <ion-card-content>
         <div><img src="{{ico}}"/></div>
         <button ion-button (click)="chooseImage()">Choose image</button>
       </ion-card-content>
-    </ion-card>
+    </ion-card>-->
     <ion-item>
-      <ion-label fixed>Name</ion-label>
-      <ion-input type="text" [(ngModel)]="name"></ion-input>
+      <ion-label floating>ชื่อ-สกุล</ion-label>
+      <ion-input type="text" [(ngModel)]="name" ></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-label fixed>Phone</ion-label>
-      <ion-input type="text" [(ngModel)]="phone"></ion-input>
+      <ion-label floating>เบอร์โทร</ion-label>
+      <ion-input type="tel" [(ngModel)]="phone" ></ion-input>
     </ion-item>
 
     <ion-item>
-        <ion-label fixed>Address</ion-label>
-        <ion-input type="text" [(ngModel)]="address"></ion-input>
+        <ion-label floating>ที่อยู่</ion-label>
+        <ion-textarea type="text" [(ngModel)]="address" ></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>จำนวนเงิน (บาท)</ion-label>
+        <ion-input type="number" [(ngModel)]="amount" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>ระยะเวลา</ion-label>
+        <ion-input type="text" [(ngModel)]="duration" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>อัตราดอกเบี้ย (%)</ion-label>
+        <ion-input type="number" [(ngModel)]="rate" ></ion-input>
       </ion-item>
   
   </ion-list>
