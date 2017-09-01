@@ -11,4 +11,16 @@ export class HomePage {
 
   }
 
+  createLoan(){
+
+  }
+  addLoad(){
+
+  }
+  showListLoad(){
+
+  }
+  outProcess(){
+    
+  }
 }
