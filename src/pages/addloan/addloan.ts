@@ -14,12 +14,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'addloan.html',
 })
 export class AddloanPage {
+  name = "";
+  phone = "";
+  address = "";
 
+  contact = 
+  {name:'',phone:'',address:'',ico:''};
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddloanPage');
+  }
+  chooseImage() {
+
+  }
+  update() {
+
+  }
+  cancel () {
+
   }
 
 }

@@ -12,10 +12,10 @@ export class HomePage {
   }
 
   createLoan(){
-
+    
   }
   addLoad(){
-
+    this.navCtrl.push("AddloanPage");
   }
   showListLoad(){
 
